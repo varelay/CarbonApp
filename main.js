@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             return alert("Por favor escribe la MAC de la impresora")
         }
         demostrarCapacidades(direccionMacDeLaImpresora, licencia);
-        window.location.reload()
+        window.location.reload() //Sam
     });
 
     const demostrarCapacidades = async (macImpresora, licencia) => {

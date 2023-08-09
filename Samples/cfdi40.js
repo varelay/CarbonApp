@@ -5,7 +5,7 @@ var newCfdi40=
         "CfdiUse": "G03",
         "Rfc": "URE180429TM6",
         "FiscalRegime": "601",
-        "TaxZipCode": "65000"        
+        "TaxZipCode": "65000",    
     },
     "CfdiType": "I",
     "NameId": "1",
@@ -46,7 +46,8 @@ var clientUpdate;
 function testCRUDCfdi40() {
 	var cfdi;
 
-	//creación de un cfdi 4.0 con errores
+	//creación de un cfdi 4.0 con errore
+	/*
 	Facturama.Cfdi.Create(newCfdi, function(result){ 
 		cfdi = result;
 		console.log("creacion",result);
@@ -56,9 +57,9 @@ function testCRUDCfdi40() {
             console.log("Errores", error.responseJSON);
         }		
 	});
-	
+	*/
 	//creación de un cfdi 4.0
-	newCfdi40.ExpeditionPlace = "76087";
+	newCfdi40.ExpeditionPlace = "65000";
 	Facturama.Cfdi.Create3(newCfdi40, function(result)
 	{ 
 		cfdi = result;

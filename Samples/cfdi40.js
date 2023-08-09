@@ -47,7 +47,6 @@ function testCRUDCfdi40() {
 	var cfdi;
 
 	//creación de un cfdi 4.0 con errores
-	/*
 	Facturama.Cfdi.Create(newCfdi, function(result){ 
 		cfdi = result;
 		console.log("creacion",result);
@@ -56,10 +55,10 @@ function testCRUDCfdi40() {
 		if (error && error.responseJSON) {
             console.log("Errores", error.responseJSON);
         }		
-	});*/
+	});
 	
 	//creación de un cfdi 4.0
-	//newCfdi40.ExpeditionPlace = "76087";
+	newCfdi40.ExpeditionPlace = "76087";
 	Facturama.Cfdi.Create3(newCfdi40, function(result)
 	{ 
 		cfdi = result;

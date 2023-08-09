@@ -59,7 +59,7 @@ function testCRUDCfdi40() {
 	});
 	*/
 	//creación de un cfdi 4.0
-	newCfdi40.ExpeditionPlace = "65000";
+	newCfdi40.ExpeditionPlace = "76087";
 	Facturama.Cfdi.Create3(newCfdi40, function(result)
 	{ 
 		cfdi = result;

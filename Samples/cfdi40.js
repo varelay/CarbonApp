@@ -9,7 +9,6 @@ var newCfdi40=
     },
     "CfdiType": "I",
     "NameId": "1",
-    "ExpeditionPlace": "26015",
     "Serie": null,
     "Folio": "V8",
     "PaymentForm": "01",

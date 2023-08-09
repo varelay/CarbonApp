@@ -1,55 +1,44 @@
 var newCfdi40= 
 {
-    "Serie": "AB",
-    "Currency": "MXN",
-    "ExpeditionPlace": "00000",
-    "PaymentConditions": "CREDITO A SIETE DIAS",
-    "CfdiType": "I",
-    "PaymentForm": "03",
-    "PaymentMethod": "PUE",
-	"Receiver": 
-    {
-        "Rfc": "ZUÑ920208KL4",
-        "Name": "ZAPATERIA URTADO ÑERI",
-        "CfdiUse": "G01",
+    "Receiver": {
+        "Name": "UNIVERSIDAD ROBOTICA ESPAÑOLA",
+        "CfdiUse": "G03",
+        "Rfc": "URE180429TM6",
         "FiscalRegime": "601",
-        "TaxZipCode": "77060"
+        "TaxZipCode": "65000"        
     },
-    "Items": 
-	[{
-        "ProductCode": "10101504",
-        "IdentificationNumber": "EDL",
-        "Description": "Estudios de viabilidad",
-        "Unit": "NO APLICA",
-        "UnitCode": "MTS",
-        "UnitPrice": 50.0,
-        "Quantity": 2.0,
-        "Subtotal": 100.0,
-		"TaxObject": "02",  	// Nuevos elementos para CFDi 4.0
-        "Taxes": [{
-            "Total": 16.0,
-            "Name": "IVA",
-            "Base": 100.0,
-            "Rate": 0.16,
-            "IsRetention": false
-        }],
-        "Total": 116.0
-    },
-    {
-        "ProductCode": "10101504",
-        "IdentificationNumber": "001",
-        "Description": "SERVICIO DE COLOCACION",
-        "Unit": "NO APLICA",
-        "UnitCode": "E49",
-        "UnitPrice": 100.0,
-        "Quantity": 15.0,
-        "Subtotal": 1500.0,
-        "Discount": 0.0,
-		"TaxObject":"01",        
-        "Total": 1500.0
-    }
-
-]
+    "CfdiType": "I",
+    "NameId": "1",
+    "ExpeditionPlace": "26015",
+    "Serie": null,
+    "Folio": "V8",
+    "PaymentForm": "01",
+    "PaymentMethod": "PUE",
+    "Exportation": "01",
+    "Items": [
+        {
+            "Quantity": "1",
+            "ProductCode": "10111302",
+            "UnitCode": "H87",
+            "Unit": "Pieza",
+            "Description": "producto prueba cfdi4.0",
+            "IdentificationNumber": "papc40",
+            "UnitPrice": "1.00",
+            "Subtotal": "1.00",
+            "TaxObject": "02",
+            "Taxes": [
+                {
+                    "Name": "IVA",
+                    "Rate": "0.16",
+                    "Total": "0.16",
+                    "Base": "1",
+                    "IsRetention": "false",
+                    "IsFederalTax": "true"
+                }
+            ],
+            "Total": "1.16"
+        }
+    ]
 };
 
 
